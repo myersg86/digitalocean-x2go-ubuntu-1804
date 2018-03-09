@@ -6,10 +6,10 @@ In this guide, you will learn how to install and configure an remotely accessibl
 Your droplet will have the same utilities and functionality  as having an Ubuntu Mate Desktop Installation on a physical computer, except it lives on DigitalOcean servers and is accessible from anywhere that you have internet access. 
 Remote access client are available for Windows, Mac, and Linux.
 
-For a variety of legitimate reasons, most servers don't use or have any need for a graphical user interface.
+For a variety of reasons, most servers don't use or have any need for a graphical user interface.
 In some use cases however it can be helpful or desirable to have a lightweight desktop enviornment accessible from anywhere you have an internet connection.
 
-The typical solution to interacting with a GUI(graphical user interface) on a remote Linux desktop running is Virtual Network Computing (VNC). Unfortunately VNC connections can be sluggish or unresponsive and most VNC server packages available require signifigant tweaking in order to run them securely on the internet. X2Go was created as a solution to this problem. 
+The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). Unfortunately VNC connections can be sluggish or unresponsive and most VNC server packages available require signifigant tweaking in order to run them securely on the internet. X2Go was created as a solution to this problem. 
 Latency intensive parts of X-forwarding have worked around by creating a proxy on each side of the network connection and sending compressed updates back and forth.
 Simply put, X2Go compresses and optimizes the stuff the updates sent back and forth to a point where it seems just as responsive as if you had your monitor plugged directly into your droplet server. 
 
