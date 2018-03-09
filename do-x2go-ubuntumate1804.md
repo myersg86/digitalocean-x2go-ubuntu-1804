@@ -14,9 +14,7 @@ X2Go works with your existing SSH daemon, encrypting all traffic between the cli
 X2Go either avoids or optimizes the most latency-intensive parts of X-forwarding without complex manual configuration, it and sends only compressed updates back and forth.
 Simply put, X2Go compresses and optimizes the stuff the updates sent back and forth to a point where it seems just as responsive as if you had your monitor plugged directly into your droplet server. 
 
- 
-
-Such a setup is useful when:
+ Such a setup is useful when:
 
 - You need this desktop environment but can't install a Linux-based operating system locally.
 - You need some combination of graphical desktop, high-speed Internet, reliable power source, and ability to scale resources up and down quickly.
