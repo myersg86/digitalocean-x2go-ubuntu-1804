@@ -9,10 +9,9 @@ Remote access client are available for Windows, Mac, and Linux.
 For a variety of legitimate reasons, most servers don't use or have any need for a graphical user interface.
 In some use cases however it can be helpful or desirable to have a lightweight desktop enviornment accessible from anywhere you have an internet connection.
 
-The typical solution to interacting with a graphical interface on a remote computer running Linux  is Virtual Network Computing (VNC)., VNC connections are notioursly sluggish and can seem unresponsive on slow connections. Setting VNC servers up to allow encrypted remote access also requires a lot of configuration. X2Go was created as a solution to this problem.
-
-X2Go uses the nx library originally developed by NoMachine. 
+The typical solution to interacting with a GUI(graphical user interface) on a remote Linux desktop running is Virtual Network Computing (VNC). Unfortunately VNC connections can be sluggish or unresponsive and most VNC server packages available require signifigant tweaking in order to run them securely on the internet. X2Go was created as a solution to this problem. 
 Latency intensive parts of X-forwarding have worked around by creating a proxy on each side of the network connection and sending compressed updates back and forth.
+Simply put, 
 
 In contrast, X2Go provides several advantages:
 - X2Go doesn't require complex manual configuration.
