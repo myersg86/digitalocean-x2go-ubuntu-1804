@@ -2,17 +2,25 @@
 
 ### Introduction
 
-In this guide, you will learn how to install and configure an remotely accessible desktop enviornment on a Digital Ocean Ubuntu 17.10 Droplet. 
-Your droplet will have the same utilities and functionality  as having an Ubuntu Mate Desktop Installation on a physical computer, except it lives on DigitalOcean servers and is accessible from anywhere that you have internet access. 
-Remote access client are available for Windows, Mac, and Linux.
+In this guide, you will learn how to install and configure an remotely accessible desktop environment on a Digital Ocean Ubuntu 17.10 Droplet. 
+
+Your droplet will have the same utilities and functionality as having an Ubuntu Mate Desktop Installation on a physical computer, except it lives on DigitalOcean servers and is accessible from anywhere that you have internet access. 
+
+Remote access clients are available for Windows, Mac, and Linux.
 
 For a variety of reasons, most servers don't use or have any need for a graphical user interface.
-In some use cases however it can be helpful or desirable to have a lightweight desktop environment accessible from anywhere you have an internet connection.
 
-The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). Unfortunately VNC connections can be sluggish or unresponsive and most VNC server packages available require significant tweaking to run them securely on the internet. X2Go was created as a solution to this problem. 
+In some use cases however, it can be helpful or desirable to have a lightweight desktop environment accessible from anywhere you have an internet connection.
+
+The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). Unfortunately, VNC connections can be sluggish or unresponsive and most VNC server packages available require significant tweaking to run them securely on the internet. X2Go was created as a solution to this problem. 
+
 X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication.
+
 X2Go either avoids or optimizes the most latency-intensive parts of X-forwarding without complex manual configuration, it and sends only compressed updates back and forth.
+
 Simply put, X2Go compresses and optimizes the stuff the updates sent back and forth to a point where it seems just as responsive as if you had your monitor plugged directly into your droplet server. 
+
+
 
  Such a setup is useful when:
 
