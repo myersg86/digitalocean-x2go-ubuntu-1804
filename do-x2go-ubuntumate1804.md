@@ -1,4 +1,4 @@
-# How To Set Up a Remote Desktop with X2Go on Ubuntu 18.04
+# How To Set Up a Remote Desktop with X2Go on Ubuntu 17.10
 
 ### Introduction
 
