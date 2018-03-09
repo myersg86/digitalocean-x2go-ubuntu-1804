@@ -19,10 +19,7 @@ Simply put, X2Go compresses and optimizes the stuff the updates sent back and fo
 Such a setup is useful when:
 
 - You need this desktop environment but can't install a Linux-based operating system locally.
-- You're going on a trip but can't take your computer with you.
-- Your Internet service provider gives you very little bandwidth, but you need access to tens or hundreds of gigabytes of data.
-- You need a separate machine to work on something for weeks or months at a time.
-- You're working with a team, and everybody needs access to a single remote desktop.
+- ​
 - You need some combination of graphical desktop, high-speed Internet, reliable power source, and ability to scale resources up and down quickly.
 
 
