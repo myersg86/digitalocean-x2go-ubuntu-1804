@@ -11,14 +11,13 @@ In some use cases however it can be helpful or desirable to have a lightweight d
 
 The typical solution to interacting with a GUI(graphical user interface) on a remote Linux desktop running is Virtual Network Computing (VNC). Unfortunately VNC connections can be sluggish or unresponsive and most VNC server packages available require signifigant tweaking in order to run them securely on the internet. X2Go was created as a solution to this problem. 
 Latency intensive parts of X-forwarding have worked around by creating a proxy on each side of the network connection and sending compressed updates back and forth.
-Simply put, 
+Simply put, X2Go compresses and optimizes the stuff the updates sent back and forth to a point where it seems just as responsive as if you had your monitor plugged directly into your droplet server. 
 
-In contrast, X2Go provides several advantages:
-- X2Go doesn't require complex manual configuration.
-- Responsive Graphical Remote Desktop that works well even over low bandwidth connections
-- X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication.
-- X2Go supports multiple login sessions, desktops, and users logged in to their own separate environments.
-- Instead of a whole desktop environment, you can launch single graphical applications in X2Go, saving your local machine's resources while taking advantage of a server's more powerful resources, even leaving tasks running remotely for days at a time.
+ X2Go doesn't require complex manual configuration.
+
+X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication.
+
+
 
 Such a setup is useful when:
 
