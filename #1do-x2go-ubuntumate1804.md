@@ -4,13 +4,13 @@
 
 In this guide, you will learn how to install and configure a remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 18.04 Droplet.
 
-Your droplet will have many same utilities and functionality as having an Ubuntu Mate Desktop Installation on a physical computer, except that it will live on a DigitalOcean droplet, making it accessible from anywhere with internet access. 
+Your droplet will have many same utilities and functionality as having an Ubuntu Mate Desktop Installation on a physical computer, except that it will live on a DigitalOcean droplet, making it accessible from anywhere with internet access.
 
 The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). VNC connections can be sluggish or unresponsive and often have default settings that create security concerns when made used over the internet. 
 
-For situations in which you'd like to remotely access a full Linux desktop with a GUI interface, X2Go is a great solution.. 
+For situations in which you'd like to remotely access a full Linux desktop with a GUI interface, X2Go is a great solution..
 
-X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication. It either avoids or optimizes the most latency-intensive parts of X-forwarding safely and without complex manual configuration. The end result is a highly-responsive and near-native desktop experience accessible from anywhere with internet connectivity. 
+X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication. It either avoids or optimizes the most latency-intensive parts of X-forwarding safely and without complex manual configuration. The end result is a highly-responsive and near-native desktop experience accessible from anywhere with internet connectivity.
 
  Such a setup is useful when:
 
@@ -23,7 +23,7 @@ Remote access clients are available for Windows, Mac, and Linux.
 
 Before you begin this guide you'll need the following:
 
-- An Ubuntu 18.04 instance with at least 4GB of RAM. (4GB is great to start with, 8GB+ RAM is optimal). 
+- An Ubuntu 18.04 instance with at least 4GB of RAM. (4GB is great to start with, 8GB+ RAM is optimal).
   Choose a server location that is as close as possible to the location where you intend to connect from to reduce latency.
 - One Ubuntu 18.04 server with a sudo non-root user, SSH key, and firewall enabled, which you can set up by following [this Initial Server Setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04).
 
@@ -33,7 +33,7 @@ Remember that if you run out of RAM, the application will be terminated by the L
 
 Introduction to the step. What are we going to do and why are we doing it?
 
-First we will need to add the official X2Go software repository to our list of packages. 
+First we will need to add the official X2Go software repository to our list of packages.
 
 Next...
 
@@ -65,7 +65,7 @@ The X2Go related packages should now be listed calling:
 apt-cache search x2go
 ```
 
-You are now able to access the X2Go packages. 
+You are now able to access the X2Go packages.
 
 ## Step 2 — Firewalling the Server
 
@@ -75,13 +75,13 @@ To secure our server, we'll be using Uncomplicated Firewall (UFW), because it's 
 
 First, install UFW:
 
-```
+```command
 sudo apt-get install ufw
 ```
 
 By default, the firewall should be inactive at this point. You can check with:
 
-```
+```command
 sudo ufw status verbose
 ```
 
@@ -95,26 +95,26 @@ Verifying the status at this point is important to avoid locking ourselves out i
 
 If UFW is already active, disable it with:
 
-```
+```command
 sudo ufw disable
 ```
 
 Now, set the default firewall rules to deny all incoming connections and allow all outgoing ones:
 
-```
+```command
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
 
 And, allow SSH connections to the server (port 22):
 
-```
+```command
 sudo ufw allow 22
 ```
 
 With the rules in place, let's activate `ufw`:
 
-```
+```command
 sudo ufw enable
 ```
 
