@@ -31,7 +31,7 @@ Remember that if you run out of RAM, the application will be terminated by the L
 
 Introduction to the step. What are we going to do and why are we doing it?
 
-First we will need to add the official X2Go software repository to our list of packages.
+First we will need to add the official X2Go software repository to our list of packages.  [apt-get ](https://help.ubuntu.com/community/AptGet)  [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
 
 Next...
 
@@ -39,9 +39,7 @@ Finally...
 
 Now transition to the next step by telling the reader what's next.
 
-Use the following commands to add the `ppa:x2go/stable` as a package source to your local system. Before doing so, you might like to learn about [apt-get](https://help.ubuntu.com/community/AptGet) and [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
 
-Alternatively you can also use the Ubuntu [software center](https://help.ubuntu.com/community/Repositories/Ubuntu#Adding_PPAs).
 
 
 To to install `add-apt-repository` on Ubuntu 18.04:
@@ -50,7 +48,7 @@ To to install `add-apt-repository` on Ubuntu 18.04:
 sudo apt-get install software-properties-common
 ```
 
-Afterwards you can add our ppa:
+Use the following commands to add the `ppa:x2go/stable` as a package source to your local system. 
 
 ```command
 sudo add-apt-repository ppa:x2go/stable
