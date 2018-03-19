@@ -33,6 +33,16 @@ Remember that if you run out of RAM, the application will be terminated by the L
 
 ## Step 1 — Add the X2Go repository on Launchpad to APT
 
+Introduction to the step. What are we going to do and why are we doing it?
+
+First....
+
+Next...
+
+Finally...
+
+Now transition to the next step by telling the reader what's next.
+
 Use the following commands to add the `ppa:x2go/stable` as a package source to your local system. Before doing so, you might like to learn about [apt-get](https://help.ubuntu.com/community/AptGet), [sudo](https://help.ubuntu.com/community/RootSudo) and [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
 
 Alternatively you can also use the Ubuntu [software center](https://help.ubuntu.com/community/Repositories/Ubuntu#Adding_PPAs).
@@ -57,25 +67,130 @@ The X2Go related packages should now be listed calling:
 apt-cache search x2go
 ```
 
-Congratulations, you are now able to access the X2Go packages. You may continue by installing x2goserver, x2goclient or pyhoca-gui or any other of the available packages.
+You are now able to access the X2Go packages. 
 
-Introduction to the step. What are we going to do and why are we doing it?
+## Step 2 — Firewalling the Server
 
-First....
+Installing an entire desktop environment pulls in a lot of additional software dependencies and recommendations, some of which may try to open up network ports. For example, the Common UNIX Printing System (CUPS) included in many DEs might try to open up port 631. While a service like CUPS may be useful at home, we don't want our server to be that exposed to the entire Internet, so blocking every incoming connection is a good idea. The only exception will be port 22, which will be left open so that we're able to connect with SSH and X2Go.
 
-Next...
+To secure our server, we'll be using Uncomplicated Firewall (UFW), because it's less error-prone to beginner mistakes, easier to understand and manage, and fits better with our goal of only allowing connections to one port. iptables and other more sophisticated firewalls are better suited for advanced and complex rules that require more fine-grained detail. (See [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) for a quick reference guide to common commands.)
 
-Finally...
+First, install UFW:
 
-Now transition to the next step by telling the reader what's next.
+```
+sudo apt-get install ufw
+```
 
-## Step 2 — Title Case
+By default, the firewall should be inactive at this point. You can check with:
 
-Another introduction
+```
+sudo ufw status verbose
+```
 
-Your content
+The result should be:
 
-Transition to the next step.
+```
+OutputStatus: inactive
+```
+
+Verifying the status at this point is important to avoid locking ourselves out if `ufw` is active when we block all incoming connections later.
+
+If UFW is already active, disable it with:
+
+```
+sudo ufw disable
+```
+
+Now, set the default firewall rules to deny all incoming connections and allow all outgoing ones:
+
+```
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+```
+
+And, allow SSH connections to the server (port 22):
+
+```
+sudo ufw allow 22
+```
+
+With the rules in place, let's activate `ufw`:
+
+```
+sudo ufw enable
+```
+
+This will output:
+
+```
+OutputCommand may disrupt existing ssh connections. Proceed with operation (y|n)?
+```
+
+Type `y` and press `ENTER` to activate the firewall.
+
+If you run into a problem and discover that SSH access is blocked, you can follow [How To Use the DigitalOcean Console to Access your Droplet](https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-console-to-access-your-droplet) to recover access.
+
+With our firewall in place, there's only one point of entry to our server, and we're ready to install the graphical environment for the X2Go server.
+
+## Step 2 — Installing the Desktop Environment
+
+In this tutorial, you'll install the XFCE desktop environment. There are two ways to achieve this, but you only need to **choose one**—either the Minimal Desktop Environment *or* the Full Desktop Environment.
+
+**Minimal Desktop Environment**: If you want to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `xfce4` *metapackage*.
+
+A metapackage doesn't contain software of its own, it just depends on other packages to be installed, allowing for an entire collection of packages to be installed at once without having to type each package name individually at the command line.
+
+Install `xfce4` and all of the additional dependencies needed to support it:
+
+```
+sudo apt-get install xfce4
+```
+
+**Full Desktop Environment:** If you don't want to handpick every component you need and would rather have a default set of packages, like a word processor, web browser, email client, and other accessories pre-installed, then you can choose `task-xfce-desktop`.
+
+Install and configure a complete desktop environment that's similar to what you would get with Debian XFCE from a bootable DVD on your local PC:
+
+```
+sudo apt-get install task-xfce-desktop
+```
+
+Now that our graphical environment is installed and configured, we need to set up a way to view it from another computer.
+
+## Step 3 — Installing X2Go on the Server
+
+X2Go comes with two main components: the server, which starts and manages the graphical session on the remote machine, and the client, which we install on our local computer to view and control the remote desktop or application.
+
+Since Debian does not include the X2Go server in its default repositories, we have to add an extra repository to the package manager's configuration.
+
+First, import the X2Go's developers' public key. This is a security measure to ensure that we can only download and install packages which are properly signed with their private keys.
+
+```
+sudo apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E
+```
+
+Now, add the repository to the package manager's config files:
+
+```
+echo 'deb http://packages.x2go.org/debian jessie main' | sudo tee /etc/apt/sources.list.d/x2go.list
+```
+
+This creates the file `/etc/apt/sources.list.d/x2go.list` and adds the line `deb http://packages.x2go.org/debian jessie main` to it, telling the package manager where to find the supplementary packages.
+
+To refresh the database of available software packages, enter the following command:
+
+```
+sudo apt-get update
+```
+
+And, finally, install X2Go on the server:
+
+```
+sudo apt-get install x2goserver x2goserver-xsession
+```
+
+At this point, no further setup is required on your server. However, keep in mind that since SSH password authentication is disabled for increased security, you'll need to have your SSH private key available on any machine that you want to log in from.
+
+We are now done setting up the server and can type `exit` or close the terminal window. The rest of the steps will focus on the client for your local machine.
 
 ## Step 3 — Title Case
 
