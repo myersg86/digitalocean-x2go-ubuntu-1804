@@ -32,25 +32,23 @@ Introduction to the step. **What are we going to do and why are we doing it?** [
 
 First we will need to add the official X2Go software repository to our list of packages. 
 
-To do this, we will first to install the `software-properties-common` package,
-
-**Next...**
-
-**Finally...**
-
-
+To do this, we will first to install`add-apt-repository`, a  is a command line utility for adding Personal Package Arcives (PPAs).
 To to install `add-apt-repository` on Ubuntu 16.04:
 
 ```command
 sudo apt-get install software-properties-common
 ```
 
-Use the following commands to add the `ppa:x2go/stable` as a package source to your local system.
+**Next...**
+
+Next, use the following commands to add the `ppa:x2go/stable` as a package source to your local system.
 
 ```command
 sudo add-apt-repository ppa:x2go/stable
 sudo apt-get update
 ```
+
+**Finally...**
 
 The X2Go related packages should now be listed calling:
 
@@ -65,7 +63,7 @@ You are now able to access the X2Go packages.
 
 ## Step 2 — Firewalling the Server
 
-Installing an entire desktop environment pulls in a lot of additional software dependencies and recommendations, some of which may try to open up network ports. For maximum security, the only port that we'll want to leave open will be port 22, so that we're able to connect with SSH and X2Go.
+Installing a desktop environment can pull-in a lot of additional software dependencies and recommendations, some of which may try to open up network ports. For maximum security, the only port that we'll want to leave open will be port 22, so that we're able to connect with SSH and X2Go.
 
 To secure our server, we'll be using Uncomplicated Firewall (UFW), because it's less error-prone to beginner mistakes, easier to understand and manage, and fits better with our goal of only allowing connections to one port. iptables and other more sophisticated firewalls are better suited for advanced and complex rules that require more fine-grained detail. (See [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) for a quick reference guide to common commands.)
 
