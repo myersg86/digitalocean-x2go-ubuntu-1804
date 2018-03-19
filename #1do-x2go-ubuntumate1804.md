@@ -1,8 +1,8 @@
-# How To Set Up and Configure a Remote Desktop with X2Go on Ubuntu 18.04
+# How To Set Up and Configure a Remote Desktop with X2Go on Ubuntu 16.04
 
 ### Introduction
 
-In this guide, you will learn how to install and configure a remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 18.04 Droplet.
+In this guide, you will learn how to install and configure a remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 16.04 Droplet.
 
 Your droplet will have many same utilities and functionality as having an [Ubuntu Mate Desktop](https://ubuntu-mate.org/what-is-ubuntu-mate/) installation on a physical computer, except it will live on a DigitalOcean droplet, making it accessible from anywhere with internet access.
 
@@ -21,9 +21,9 @@ You can connect from a computer running Linux, Windows or Mac OS X by using the 
 
 Before you begin this guide you'll need the following:
 
-- An Ubuntu 18.04 instance with at least 4GB of RAM. (4GB is great to start with, 8GB+ RAM is optimal).
+- An Ubuntu 16.04 instance with at least 4GB of RAM. (4GB is great to start with, 8GB+ RAM is optimal).
   Choose a server location that is as close as possible to the location where you intend to connect from to reduce latency.
-- One Ubuntu 18.04 server with a sudo non-root user, SSH key, and firewall enabled, which you can set up by following [this Initial Server Setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04).
+- One Ubuntu 16.04 server with a sudo non-root user, SSH key, and firewall enabled, which you can set up by following [this Initial Server Setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04).
 
 Remember that if you run out of RAM, the application will be terminated by the Linux kernel, and you might lose your work. If you know or notice that the programs you use require a lot of RAM, you can power off your droplet and resize as needed.
 
@@ -42,7 +42,7 @@ Now transition to the next step by telling the reader what's next.
 
 
 
-To to install `add-apt-repository` on Ubuntu 18.04:
+To to install `add-apt-repository` on Ubuntu 16.04:
 
 ```command
 sudo apt-get install software-properties-common
