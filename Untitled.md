@@ -4,7 +4,7 @@ On Wednesday, March 14th I had my "Final Round" of interviews for the Technical 
 I had a great time speaking with with Etel, Brian, and Justin and I am thrilled at the possibility of joining the team.
 I didn't think I could be any more enthusiastic about working at DO  after the first interview - but I was wrong. 
 
-After learning more about the role, I'm positive that my years of relevant work experience, educational background, extensive technical knowledge, and strong passion for Linux and Open-Source technologies make me a perfect fit for the Technical Editor position.
+After learning more about the position, I'm positive that my years of relevant work experience, educational background, extensive technical knowledge, and strong passion for Linux and Open-Source technologies make me a perfect fit for the job.
 
 I cannot imagine a job I'd be better suited for and I can assure that I would meet or exceed all expectations for this position. I hope that I portrayed this to the team during the interview process.
 
