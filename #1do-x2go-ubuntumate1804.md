@@ -7,10 +7,9 @@ In this guide, you will learn how to install and configure a remotely accessibl
 Your droplet will have many same utilities and functionality as having an [Ubuntu Mate Desktop](https://ubuntu-mate.org/what-is-ubuntu-mate/) installation on a physical computer, except it will live on a DigitalOcean droplet, making it accessible from anywhere with internet access.
 
 The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). VNC connections can be sluggish or unresponsive and often have default settings that are not secure if used outside of local networks. In situations where you need to remotely connect to and access a Linux desktop securely and with minimal latency, X2Go is an excellent solution.
-X2Go enables you to access a graphical desktop of a computer, even over a low bandwidth connection.
-X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication. It either avoids or optimizes the most latency-intensive parts of X-forwarding safely and without complex manual configuration. The end result is a highly-responsive and near-native desktop experience accessible from anywhere with internet connectivity.
+X2Go works with your existing SSH daemon to encrypt all traffic between the client and the server, relying on well-tested and secure mechanism of authentication. It either avoids or optimizes the most latency-intensive portions of X-forwarding safely and without complex manual configuration. The end result is a highly-responsive and near-native desktop experience accessible from anywhere with internet connectivity.
 
- Such a setup is useful when:
+Such a setup is useful when:
 
 - You need this desktop environment but can't install a Linux-based operating system locally.
 - You need some combination of graphical desktop, high-speed Internet, reliable power source, and ability to scale resources up and down quickly.
@@ -25,21 +24,19 @@ Before you begin this guide you'll need the following:
   Choose a server location that is as close as possible to the location where you intend to connect from to reduce latency.
 - One Ubuntu 16.04 server with a sudo non-root user, SSH key, and firewall enabled, which you can set up by following [this Initial Server Setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04).
 
-Remember that if you run out of RAM, the application will be terminated by the Linux kernel, and you might lose your work. If you know or notice that the programs you use require a lot of RAM, you can power off your droplet and resize as needed.
+Recall that if you run out of RAM, applications will be terminated by the Linux kernel, and you might lose your work. If you notice that the programs you use require a lot of RAM, you can power off your droplet and resize as needed.
 
 ## Step 1 — Add the X2Go repository on Launchpad to APT
 
-Introduction to the step. What are we going to do and why are we doing it?
+Introduction to the step. **What are we going to do and why are we doing it?** [apt-get](https://help.ubuntu.com/community/AptGet)  [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
 
-First we will need to add the official X2Go software repository to our list of packages.  [apt-get](https://help.ubuntu.com/community/AptGet)  [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
+First we will need to add the official X2Go software repository to our list of packages. 
 
-Next...
+To do this, we will first to install the `software-properties-common` package,
 
-Finally...
+**Next...**
 
-Now transition to the next step by telling the reader what's next.
-
-
+**Finally...**
 
 
 To to install `add-apt-repository` on Ubuntu 16.04:
@@ -62,6 +59,9 @@ apt-cache search x2go
 ```
 
 You are now able to access the X2Go packages.
+
+**Now transition to the next step by telling the reader what's next.**
+
 
 ## Step 2 — Firewalling the Server
 
