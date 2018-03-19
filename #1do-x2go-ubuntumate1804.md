@@ -30,7 +30,7 @@ Recall that if you run out of RAM, applications will be terminated by the Linux 
 
 Introduction to the step. **What are we going to do and why are we doing it?** [apt-get](https://help.ubuntu.com/community/AptGet)  [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
 
-First we will need to add the official X2Go software repository to our list of packages. 
+First we will need to add the official X2Go software repository to our list of packages.
 
 To do this, we will first to install`add-apt-repository`, a  is a command line utility for adding Personal Package Arcives (PPAs).
 To to install `add-apt-repository` on Ubuntu 16.04:
@@ -142,23 +142,20 @@ sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-deskto
 sudo apt full-upgrade
 ```
 
-**Minimal Desktop Environment**: If you want to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `xfce4` *metapackage*.
+**Minimal Desktop Environment**: If you want to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `ubuntu-mate-core` *metapackage*.
 
 A metapackage doesn't contain software of its own, it just depends on other packages to be installed, allowing for an entire collection of packages to be installed at once without having to type each package name individually at the command line.
 
-Install `xfce4` and all of the additional dependencies needed to support it:
+Install `ubuntu-mate-desktop` and all of the additional dependencies needed to support it:
 
 ```
-sudo apt-get install xfce4
+sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
 ```
 
-**Full Desktop Environment:** If you don't want to handpick every component you need and would rather have a default set of packages, like a word processor, web browser, email client, and other accessories pre-installed, then you can choose `task-xfce-desktop`.
+**Full Desktop Environment:** If you don't want to handpick every component you need and would rather have a default set of packages, like a word processor, web browser, email client, and other accessories pre-installed, then you can choose
 
 Install and configure a complete desktop environment that's similar to what you would get with Debian XFCE from a bootable DVD on your local PC:
 
-```
-sudo apt-get install task-xfce-desktop
-```
 
 Now that our graphical environment is installed and configured, we need to set up a way to view it from another computer.
 
