@@ -7,7 +7,7 @@ In this guide, you will learn how to install and configure a remotely accessibl
 Your droplet will have many same utilities and functionality as having an [Ubuntu Mate Desktop](https://ubuntu-mate.org/what-is-ubuntu-mate/) installation on a physical computer, except it will live on a DigitalOcean droplet, making it accessible from anywhere with internet access.
 
 The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). VNC connections can be sluggish or unresponsive and often have default settings that are not secure if used outside of local networks. In situations where you need to remotely connect to and access a Linux desktop securely and with minimal latency, X2Go is an excellent solution.
-X2Go enables you to access a graphical desktop of a computer over a low bandwidth (or high bandwidth) connection.
+X2Go enables you to access a graphical desktop of a computer, even over a low bandwidth connection.
 X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication. It either avoids or optimizes the most latency-intensive parts of X-forwarding safely and without complex manual configuration. The end result is a highly-responsive and near-native desktop experience accessible from anywhere with internet connectivity.
 
  Such a setup is useful when:
