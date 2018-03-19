@@ -1,6 +1,12 @@
 Hi Laurel,
 
-This past Wednesday, I interviewed with Etel, Brian, and Justin during my Final Interviews.
+This past Wednesday, I had my "Final Round" of interviews with Etel, Brian, and Justin.
+
+​What should I expect after my interviews?
+Your recruiter will reach out to discuss your interview, your concerns, and any further questions
+you might have. Your recruiter will also outline the next steps in the process so we are all on the
+same page. Our interview teams will typically round-up within 48 hours of your interview, so you
+can expect an update following.
 
 I had a great time talking with Etel, Brian, and Justin during my interviews this past Wednesday and I'm thrilled at the possibility of joining the DigitalOcean team.
 I didn’t think I could be any more enthusiastic about working at DO  after the first interview - but I was wrong. 
