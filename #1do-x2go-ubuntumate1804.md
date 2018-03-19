@@ -167,21 +167,12 @@ Since Debian does not include the X2Go server in its default repositories, we ha
 
 First, import the X2Go's developers' public key as a security measure to ensure that we can only download and install packages properly signed with their private keys.
 
-```command
-sudo apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E
-```
-
-Now, add the repository to the package manager's config files:
-
-```command
-echo 'deb http://packages.x2go.org/debian jessie main' | sudo tee /etc/apt/sources.list.d/x2go.list
-```
-
-This creates the file `/etc/apt/sources.list.d/x2go.list` and adds the line `deb http://packages.x2go.org/debian jessie main` to it, telling the package manager where to find the supplementary packages.
+ges.x2go.org/debian jessie main` to it, telling the package manager where to find the supplementary packages.
 
 To refresh the database of available software packages, enter the following command:
 
 ```command
+
 sudo apt-get update
 ```
 
@@ -197,9 +188,7 @@ We are now done setting up the server and can type `exit` or close the terminal 
 
 ```command
 apt-get update
-apt-get install python-software-properties
-add-apt-repository ppa:x2go/stable
-sudo apt-get update
+
 sudo apt-get install x2goserver x2goserver-xsession
 ```
 
