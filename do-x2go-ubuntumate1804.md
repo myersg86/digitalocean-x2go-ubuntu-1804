@@ -41,7 +41,7 @@ Finally...
 
 Now transition to the next step by telling the reader what's next.
 
-Use the following commands to add the `ppa:x2go/stable` as a package source to your local system. Before doing so, you might like to learn about [apt-get](https://help.ubuntu.com/community/AptGet), [sudo](https://help.ubuntu.com/community/RootSudo) and [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
+Use the following commands to add the `ppa:x2go/stable` as a package source to your local system. Before doing so, you might like to learn about [apt-get](https://help.ubuntu.com/community/AptGet) and [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
 
 Alternatively you can also use the Ubuntu [software center](https://help.ubuntu.com/community/Repositories/Ubuntu#Adding_PPAs).
 
