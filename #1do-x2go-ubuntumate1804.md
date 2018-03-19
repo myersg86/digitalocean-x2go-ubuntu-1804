@@ -130,9 +130,7 @@ With our firewall in place, there's only one point of entry to our server, and w
 
 ## Step 3 — Installing the Desktop Environment
 
-[MATE Desktop Environment | MATE](http://mate-desktop.org/)
-
-In this tutorial, you'll install the Mate desktop environment. There are two ways to achieve this, but you only need to **choose one**—either the Minimal Desktop Environment *or* the Full Desktop Environment.
+In this tutorial, you'll install the lightweight [MATE Desktop Environment](http://mate-desktop.org/). There are two ways to achieve this, but you only need to **choose one**—either the Minimal Desktop Environment *or* the Full Desktop Environment.
 
 **Minimal Desktop Environment**: If you want to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `xfce4` *metapackage*.
 
