@@ -69,7 +69,7 @@ You are now able to access the X2Go packages.
 
 ## Step 2 — Firewalling the Server
 
-Installing an entire desktop environment pulls in a lot of additional software dependencies and recommendations, some of which may try to open up network ports. For example, the Common UNIX Printing System (CUPS) included in many DEs might try to open up port 631. While a service like CUPS may be useful at home, we don't want our server to be that exposed to the entire Internet, so blocking every incoming connection is a good idea. The only exception will be port 22, which will be left open so that we're able to connect with SSH and X2Go.
+Installing an entire desktop environment pulls in a lot of additional software dependencies and recommendations, some of which may try to open up network ports. For maximum security, the only port that we'll want to leave open will be port 22, so that we're able to connect with SSH and X2Go.
 
 To secure our server, we'll be using Uncomplicated Firewall (UFW), because it's less error-prone to beginner mistakes, easier to understand and manage, and fits better with our goal of only allowing connections to one port. iptables and other more sophisticated firewalls are better suited for advanced and complex rules that require more fine-grained detail. (See [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) for a quick reference guide to common commands.)
 
