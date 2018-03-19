@@ -43,7 +43,7 @@ Use the following commands to add the `ppa:x2go/stable` as a package source to y
 Alternatively you can also use the Ubuntu [software center](https://help.ubuntu.com/community/Repositories/Ubuntu#Adding_PPAs).
 
 
-To to install `add-apt-repository` on Ubuntu 16.04:
+To to install `add-apt-repository` on Ubuntu 18.04:
 
 ```
 sudo apt-get install software-properties-common
