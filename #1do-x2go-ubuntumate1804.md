@@ -132,6 +132,18 @@ With our firewall in place, there's only one point of entry to our server, and w
 
 In this tutorial, you'll install the lightweight [MATE Desktop Environment](http://mate-desktop.org/). There are two ways to achieve this, but you only need to **choose one**—either the Minimal Desktop Environment *or* the Full Desktop Environment.
 
+**Add Required Repositories for Desktop Environment**
+
+```
+sudo apt-add-repository ppa:ubuntu-mate-dev/ppa
+```
+
+```
+sudo apt-add-repository ppa:ubuntu-mate-dev/trusty-mate
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
+```
+
 **Minimal Desktop Environment**: If you want to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `xfce4` *metapackage*.
 
 A metapackage doesn't contain software of its own, it just depends on other packages to be installed, allowing for an entire collection of packages to be installed at once without having to type each package name individually at the command line.
@@ -188,13 +200,13 @@ At this point, no further setup is required on your server. However, keep in min
 
 We are now done setting up the server and can type `exit` or close the terminal window. The rest of the steps will focus on the client for your local machine.
 
-## Step 3 — Title Case
+> apt-get update
+apt-get install python-software-properties
+add-apt-repository ppa:x2go/stable
+sudo apt-get update
+sudo apt-get install x2goserver x2goserver-xsession
 
-Another introduction
 
-Your content
-
-Transition to the next step.
 
 ## Conclusion
 
