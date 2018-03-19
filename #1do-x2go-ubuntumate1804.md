@@ -215,7 +215,7 @@ Double-click the .dmg file to open a folder containing the copyright, license, a
 
 And, if you're using Debian or Ubuntu you can install the X2Go client with:
 
-```
+```command
 sudo apt-get install x2goclient
 ```
 
