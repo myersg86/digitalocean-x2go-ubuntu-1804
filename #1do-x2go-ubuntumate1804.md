@@ -206,6 +206,76 @@ sudo apt-get install x2goserver x2goserver-xsession
 
 
 
+## Step 4 — Installing the X2Go Client Locally
+
+If you're using Windows on your local machine, you can download the client software from <http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe>.
+
+After you select your preferred language and agree to the license, a wizard will guide you through each step of the installation process. Normally, there shouldn't be any reason to change any of the default values pre-filled or pre-selected in these steps.
+
+If you're running macOS locally, you can find the client software at <http://code.x2go.org/releases/X2GoClient_latest_macosx_10_9.dmg>.
+
+Double-click the .dmg file to open a folder containing the copyright, license, and X2Go client executable, then double-click the executable to start the client.
+
+And, if you're using Debian or Ubuntu you can install the X2Go client with:
+
+```
+sudo apt-get install x2goclient
+```
+
+If you'd like additional information about the clients or you'd like to build from the source, you can visit [X2Go's official documentation](http://wiki.x2go.org/doku.php/download:start).
+
+Now that the desktop client is installed, we can configure its settings and connect to the X2Go server to use our remote XFCE desktop.
+
+## Step 5 — Connecting to the Remote Desktop
+
+When you first open the X2Go client, the following window should appear. If it doesn't, click **Session** in the top-left menu and then select **New session ...**.
+
+![X2Go Client Screenshot - Creating a New Session](http://assets.digitalocean.com/articles/how-to-setup-a-remote-desktop-with-x2go-on-debian-8/create-new-session.png)
+
+In the **Session name** field, enter something to help differentiate between servers. This can be particularly useful if you plan on connecting to multiple machines, since all of the names will be listed in the program's main window once you save your settings.
+
+Enter your server's IP address or hostname in the **Host** field under **Server**.
+
+Enter the username you used for your SSH connection in the **Login** field.
+
+And, since it's what we installed in Step Two, choose `XFCE` as your **Session type**.
+
+Finally, because we log into the server with SSH keys, click the folder icon next to **Use RSA/DSA key for ssh connection** and browse to your private key.
+
+The rest of the default settings should suffice for now, but as you get more familiar with the software, you can fine tune the client based on your individual preferences.
+
+After pressing the **OK** button, you can start your graphical session by clicking the white box that includes your session name on the top-right side of the screen.
+
+![X2Go Main Window - Session List](http://assets.digitalocean.com/articles/how-to-setup-a-remote-desktop-with-x2go-on-debian-8/main-window.png)
+
+In a few seconds, your remote desktop will be displayed, and you can start interacting with it. At first login, XFCE will ask if you want to **Use default config** or **One empty panel**. The first option will create a rectangular panel docked at the bottom of the screen, containing a few useful application shortcuts (e.g. a file manager, a terminal emulator, a browser, etc.). This option will also add a top panel to the desktop that includes utilities like an application launcher, a clock, a shutdown menu, and more.
+
+Unless you're already familiar with XFCE, opting for an empty panel can be more complicated since you'll be starting from scratch. There will be no taskbar, no clock, no pre-configured start menu; it will be up to you to add everything to an empty panel on your own.
+
+Additionally, on Windows and Linux-based operating systems, there are a few useful keyboard shortcuts you can use for a better experience:
+
+`CTRL+ALT+F` will toggle full-screen mode on and off. Working in full-screen mode can feel more like a local desktop experience. Plus, other keyboard shortcuts will be grabbed by the remote OS instead of the local one.
+
+`CTRL+ALT+M` will minimize the remote view, even if you are in full-screen mode
+
+`CTRL+ALT+T` will disconnect from the session but leave the GUI running on the server. It's just a quick way of disconnecting without logging off or closing applications on the server. The same will happen if you click the window's close button.
+
+Lastly, there are two ways you can end the remote session, closing all of the graphical programs running in it. You can log off remotely from XFCE's **start menu**, or you can click the button marked with a circle and a small line (like a power/standby icon) in the bottom right corner of the main portion of the screen.
+
+The first method is cleaner but may leave programs like session managing software running. The second method will close everything but may do so forcefully if a process can't cleanly exit. In either case, be sure to save your work before proceeding.
+
+![X2Go Main Window - Terminate Session Button](http://assets.digitalocean.com/articles/how-to-setup-a-remote-desktop-with-x2go-on-debian-8/terminate-session.png)
+
+On a final note, although it's not required, let's go into XFCE's control panel, navigate to power settings and disable all standby features. If you don't use the desktop for a while, XFCE will try to trigger a standby. Although the server normally won't do anything when it receives this request, it's better to avoid any unforeseen behaviors altogether.
+
+## Conclusion
+
+You now have a working "cloud desktop," complete with all the advantages of an always-online, remotely-accessible, computing system.
+
+To go a step further, you could centralize your development work by [creating a git repository](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github), installing a remote code editor like Eclipse, or [configuring a web server](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-debian) for testing web applications. You could also couple your remote desktop with [a good backup scheme](https://www.digitalocean.com/community/tutorials/how-to-choose-an-effective-backup-strategy-for-your-vps) to make sure that your work environment is available from anywhere and that it's safe from data loss.
+
+If you'd like to learn more, visit [X2Go's official documentation website](https://wiki.x2go.org/doku.php).
+
 ## Conclusion
 
 In this article you [configured/set up/built/deployed] [something]. Now you can....
