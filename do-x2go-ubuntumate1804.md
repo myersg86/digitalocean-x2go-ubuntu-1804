@@ -2,7 +2,7 @@
 
 ### Introduction
 
-In this guide, you will learn how to install and configure an remotely accessible desktop environment on a Digital Ocean Ubuntu 18.04 Droplet. 
+In this guide, you will learn how to install and configure an remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 18.04 Droplet.
 
 Your droplet will have the same utilities and functionality as having an Ubuntu Mate Desktop Installation on a physical computer, except it lives on DigitalOcean servers and is accessible from anywhere that you have internet access. 
 
