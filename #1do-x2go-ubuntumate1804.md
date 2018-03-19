@@ -48,7 +48,7 @@ To to install `add-apt-repository` on Ubuntu 18.04:
 sudo apt-get install software-properties-common
 ```
 
-Use the following commands to add the `ppa:x2go/stable` as a package source to your local system. 
+Use the following commands to add the `ppa:x2go/stable` as a package source to your local system.
 
 ```command
 sudo add-apt-repository ppa:x2go/stable
@@ -200,13 +200,13 @@ At this point, no further setup is required on your server. However, keep in min
 
 We are now done setting up the server and can type `exit` or close the terminal window. The rest of the steps will focus on the client for your local machine.
 
-> apt-get update
+```command
+apt-get update
 apt-get install python-software-properties
 add-apt-repository ppa:x2go/stable
 sudo apt-get update
 sudo apt-get install x2goserver x2goserver-xsession
-
-
+```
 
 ## Step 4 — Installing the X2Go Client Locally
 
