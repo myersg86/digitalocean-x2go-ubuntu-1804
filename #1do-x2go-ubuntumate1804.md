@@ -276,6 +276,4 @@ To go a step further, you could centralize your development work by [creating a 
 
 If you'd like to learn more, visit [X2Go's official documentation website](https://wiki.x2go.org/doku.php).
 
-## Conclusion
-
-In this article you [configured/set up/built/deployed] [something]. Now you can....
+In this article you [configured/set up/built/deployed][something]. Now you can....
