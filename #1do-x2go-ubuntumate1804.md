@@ -152,8 +152,6 @@ Install `ubuntu-mate-desktop` and all of the additional dependencies needed to s
 sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
 ```
 
-**Full Desktop Environment:** If you don't want to handpick every component you need and would rather have a default set of packages, like a word processor, web browser, email client, and other accessories pre-installed, then you can choose
-
 Install and configure a complete desktop environment that's similar to what you would get with Debian XFCE from a bootable DVD on your local PC:
 
 
