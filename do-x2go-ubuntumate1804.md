@@ -40,20 +40,20 @@ Alternatively you can also use the Ubuntu [software center](https://help.ubuntu.
 
 To to install `add-apt-repository` on Ubuntu 18.04:
 
-```
+```command
 sudo apt-get install software-properties-common
 ```
 
 Afterwards you can add our ppa:
 
-```
+```command
 sudo add-apt-repository ppa:x2go/stable
 sudo apt-get update
 ```
 
 The X2Go related packages should now be listed calling:
 
-```
+```command
 apt-cache search x2go
 ```
 
