@@ -2,17 +2,17 @@
 
 ### Introduction
 
-In this guide, you will learn how to install and configure an remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 18.04 Droplet.
+In this guide, you will learn how to install and configure a remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 18.04 Droplet.
 
 Your droplet will have many same utilities and functionality as having an Ubuntu Mate Desktop Installation on a physical computer, except it lives on DigitalOcean servers and is accessible from anywhere that you have internet access. 
 
-The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). Unfortunately, VNC connections can be sluggish or unresponsive and most VNC server packages available require significant tweaking to run them securely on the internet. X2Go was created as a solution to this problem. 
+The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). However, VNC connections can be sluggish or unresponsive and often have default settings that create security concerns when made accessible over the internet. 
 
-X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication.
+For situations in which you'd like to remotely access a full Linux desktop with a GUI interface, X2Go is a great solution.. 
 
-X2Go either avoids or optimizes the most latency-intensive parts of X-forwarding without complex manual configuration, it and sends only compressed updates back and forth.
+X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication. It either avoids or optimizes the most latency-intensive parts of X-forwarding safely and without complex manual configuration.
 
-Simply put, X2Go compresses and optimizes the stuff the updates sent back and forth to a point where it seems just as responsive as if you had your monitor plugged directly into your droplet server. 
+Simply put, X2Go compresses and optimizes the stuff the updates sent back and forth to a point where it seems just as responsive as if you had your monitor plugged into your droplet server. 
 
  Such a setup is useful when:
 
