@@ -15,7 +15,7 @@ X2Go works with your existing SSH daemon, encrypting all traffic between the cli
 - You need this desktop environment but can't install a Linux-based operating system locally.
 - You need some combination of graphical desktop, high-speed Internet, reliable power source, and ability to scale resources up and down quickly.
 
-Remote access clients are available for Windows, Mac, and Linux.
+You can connect from a computer running Linux, Windows or Mac OS X by using the free and open-source X2Go Client.
 
 ## Prerequisites
 
