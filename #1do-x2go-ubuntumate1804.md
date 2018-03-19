@@ -33,7 +33,7 @@ Remember that if you run out of RAM, the application will be terminated by the L
 
 Introduction to the step. What are we going to do and why are we doing it?
 
-First we will need to a
+First we will need to add the official X2Go software repository to our list of packages. 
 
 Next...
 
