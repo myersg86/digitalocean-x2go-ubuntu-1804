@@ -4,9 +4,9 @@
 
 In this guide, you will learn how to install and configure a remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 18.04 Droplet.
 
-Your droplet will have many same utilities and functionality as having an Ubuntu Mate Desktop Installation on a physical computer, except it lives on DigitalOcean servers and is accessible from anywhere that you have internet access. 
+Your droplet will have many same utilities and functionality as having an Ubuntu Mate Desktop Installation on a physical computer, except that it will live on a DigitalOcean droplet, making it accessible from anywhere with internet access. 
 
-The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). However, VNC connections can be sluggish or unresponsive and often have default settings that create security concerns when made accessible over the internet. 
+The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). VNC connections can be sluggish or unresponsive and often have default settings that create security concerns when made used over the internet. 
 
 For situations in which you'd like to remotely access a full Linux desktop with a GUI interface, X2Go is a great solution.. 
 
@@ -33,7 +33,7 @@ Remember that if you run out of RAM, the application will be terminated by the L
 
 Introduction to the step. What are we going to do and why are we doing it?
 
-First....
+First we will need to a
 
 Next...
 
