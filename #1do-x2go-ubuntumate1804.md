@@ -130,11 +130,11 @@ In this tutorial, you'll install the lightweight [MATE Desktop Environment](http
 
 **Add Required Repositories for Desktop Environment**
 
-```
+```command
 sudo apt-add-repository ppa:ubuntu-mate-dev/ppa
 ```
 
-```
+```command
 sudo apt-add-repository ppa:ubuntu-mate-dev/xenial-mate
 sudo apt update
 sudo apt-get update && sudo apt-get upgrade
@@ -148,7 +148,7 @@ A metapackage doesn't contain software of its own, it just depends on other pack
 
 Install `ubuntu-mate-desktop` and all of the additional dependencies needed to support it:
 
-```
+```command
 sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
 ```
 
