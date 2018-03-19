@@ -10,7 +10,7 @@ The typical solution to interacting with a GUI( graphical user interface) on a r
 
 For situations in which you'd like to remotely access a full Linux desktop with a GUI interface, X2Go is a great solution.. 
 
-X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication. It either avoids or optimizes the most latency-intensive parts of X-forwarding safely and without complex manual configuration. The end result is a near-native experience 
+X2Go works with your existing SSH daemon, encrypting all traffic between the client and the server while relying on the same well-tested and secure mechanism of authentication. It either avoids or optimizes the most latency-intensive parts of X-forwarding safely and without complex manual configuration. The end result is a highly-responsive and near-native desktop experience accessible from anywhere with internet connectivity. 
 
  Such a setup is useful when:
 
