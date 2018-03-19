@@ -30,14 +30,13 @@ Simply put, X2Go compresses and optimizes the stuff the updates sent back and fo
 
 Before you begin this guide you'll need the following:
 
-- An Ubuntu 18.04 instance with at least 4GB of RAM. (4GB is great to start with, 8GB+ RAM is optimal). Choose a server location that is as close as possible to the area where you intend to connect from.
+- An Ubuntu 18.04 instance with at least 4GB of RAM. (4GB is great to start with, 8GB+ RAM is optimal). 
+  Choose a server location that is as close as possible to the location where you intend to connect from to reduce latency.
 - One Ubuntu 18.04 server with a sudo non-root user, SSH key, and firewall enabled, which you can set up by following [this Initial Server Setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04).
 
 Remember that if you run out of RAM, the application will be terminated by the Linux kernel, and you might lose your work. If you know or notice that the programs you use require a lot of RAM, you can power off your droplet and resize as needed.
 
-## Step 1 — Install Let’s Encrypt SSL Certificate
-
-## Add the X2Go repository on Launchpad to APT
+## Step 1 — Add the X2Go repository on Launchpad to APT
 
 Use the following commands to add the `ppa:x2go/stable` as a package source to your local system. Before doing so, you might like to learn about [apt-get](https://help.ubuntu.com/community/AptGet), [sudo](https://help.ubuntu.com/community/RootSudo) and [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
 
