@@ -272,5 +272,3 @@ You now have a working "cloud desktop," complete with all the advantages of an a
 To go a step further, you could centralize your development work by [creating a git repository](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github), installing a remote code editor like Eclipse, or [configuring a web server](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-debian) for testing web applications. You could also couple your remote desktop with [a good backup scheme](https://www.digitalocean.com/community/tutorials/how-to-choose-an-effective-backup-strategy-for-your-vps) to make sure that your work environment is available from anywhere and that it's safe from data loss.
 
 If you'd like to learn more, visit [X2Go's official documentation website](https://wiki.x2go.org/doku.php).
-
-In this article you configured/set up/built/deployed something. Now you can....
