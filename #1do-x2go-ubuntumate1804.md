@@ -31,7 +31,7 @@ Remember that if you run out of RAM, the application will be terminated by the L
 
 Introduction to the step. What are we going to do and why are we doing it?
 
-First we will need to add the official X2Go software repository to our list of packages.  [apt-get ](https://help.ubuntu.com/community/AptGet)  [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
+First we will need to add the official X2Go software repository to our list of packages.  [apt-get](https://help.ubuntu.com/community/AptGet)  [ppa](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories)s
 
 Next...
 
@@ -278,4 +278,4 @@ To go a step further, you could centralize your development work by [creating a 
 
 If you'd like to learn more, visit [X2Go's official documentation website](https://wiki.x2go.org/doku.php).
 
-In this article you [configured/set up/built/deployed][something]. Now you can....
+In this article you configured/set up/built/deployed something. Now you can....
