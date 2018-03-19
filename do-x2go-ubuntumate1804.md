@@ -162,7 +162,7 @@ X2Go comes with two main components: the server, which starts and manages the gr
 
 Since Debian does not include the X2Go server in its default repositories, we have to add an extra repository to the package manager's configuration.
 
-First, import the X2Go's developers' public key. This is a security measure to ensure that we can only download and install packages which are properly signed with their private keys.
+First, import the X2Go's developers' public key as a security measure to ensure that we can only download and install packages properly signed with their private keys.
 
 ```
 sudo apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E
