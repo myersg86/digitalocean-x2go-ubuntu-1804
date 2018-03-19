@@ -152,8 +152,7 @@ Install `ubuntu-mate-desktop` and all of the additional dependencies needed to s
 sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
 ```
 
-Install and configure a complete desktop environment that's similar to what you would get with Debian XFCE from a bootable DVD on your local PC:
-
+This install and configure a complete desktop environment similar to what you'd get if installing Ubuntu Mate from a bootable DVD on your local PC.
 
 Now that our graphical environment is installed and configured, we need to set up a way to view it from another computer.
 
