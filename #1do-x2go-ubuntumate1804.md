@@ -172,9 +172,11 @@ ges.x2go.org/debian jessie main` to it, telling the package manager where to fin
 To refresh the database of available software packages, enter the following command:
 
 ```command
-
-sudo apt-get update
+apt-get install python-software-properties
+add-apt-repository ppa:x2go/stable
 ```
+
+
 
 And, finally, install X2Go on the server:
 

@@ -1123,8 +1123,8 @@ sudo apt full-upgrade
 <p>First, import the X2Go&rsquo;s developers&rsquo; public key as a security measure to ensure that we can only download and install packages properly signed with their private keys.</p>
 <p>ges.x2go.org/debian jessie main` to it, telling the package manager where to find the supplementary packages.</p>
 <p>To refresh the database of available software packages, enter the following command:</p>
-<pre><code class="command">
-sudo apt-get update
+<pre><code class="command">apt-get install python-software-properties
+add-apt-repository ppa:x2go/stable
 </code></pre>
 
 <p>And, finally, install X2Go on the server:</p>
