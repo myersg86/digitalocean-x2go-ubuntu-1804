@@ -130,7 +130,7 @@ If you run into a problem and discover that SSH access is blocked, you can follo
 
 With our firewall in place, there's only one point of entry to our server, and we're ready to install the graphical environment for the X2Go server.
 
-## Step 2 — Installing the Desktop Environment
+## Step 3 — Installing the Desktop Environment
 
 In this tutorial, you'll install the XFCE desktop environment. There are two ways to achieve this, but you only need to **choose one**—either the Minimal Desktop Environment *or* the Full Desktop Environment.
 
