@@ -180,7 +180,7 @@ sudo apt-get update
 Finally, install X2Go on the server:
 
 ```command
-sudo apt-get install x2goserver x2goserver-xsession
+sudo apt-get install x2goserver x2goserver-xsession x2gomatebindings
 ```
 
 At this point, no further setup is required on your server. However, keep in mind that since SSH password authentication is disabled for increased security, you'll need to have your SSH private key available on any machine that you want to log in from.
@@ -190,7 +190,7 @@ We are now done setting up the server and can type `exit` or close the terminal 
 ```command
 apt-get update
 
-sudo apt-get install x2goserver x2goserver-xsession
+sudo apt-get install x2goserver x2goserver-xsession 
 ```
 
 ## Step 4 — Installing the X2Go Client Locally
