@@ -137,9 +137,11 @@ sudo apt-add-repository ppa:ubuntu-mate-dev/ppa
 ```
 
 ```
-sudo apt-add-repository ppa:ubuntu-mate-dev/trusty-mate
+sudo apt-add-repository ppa:ubuntu-mate-dev/xenial-mate
+sudo apt update
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
+sudo apt full-upgrade
 ```
 
 **Minimal Desktop Environment**: If you want to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `xfce4` *metapackage*.
