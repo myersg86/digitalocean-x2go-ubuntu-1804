@@ -176,9 +176,11 @@ apt-get install python-software-properties
 add-apt-repository ppa:x2go/stable
 ```
 
+```command
+sudo apt-get update
+```
 
-
-And, finally, install X2Go on the server:
+Finally, install X2Go on the server:
 
 ```command
 sudo apt-get install x2goserver x2goserver-xsession
