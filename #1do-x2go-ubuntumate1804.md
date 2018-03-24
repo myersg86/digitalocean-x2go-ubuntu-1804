@@ -136,7 +136,7 @@ sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-deskto
 
 **Minimal Desktop Environment**: If you want to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `ubuntu-mate-core` *metapackage*.
 
-A metapackage doesn't contain software of its own, it just depends on other packages to be installed, allowing for an entire collection of packages to be installed at once without having to type each package name individually at the command line.
+A metapackage doesn't contain software of its own, it just lists other packages (or "dependencies") to be installed, allowing for an entire collection of packages to be installed at once without having to type each package name individually at the command line.
 
 ```command
 sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
