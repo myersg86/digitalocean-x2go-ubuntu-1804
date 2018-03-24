@@ -14,7 +14,6 @@ nano ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 
 sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
-sudo apt-get update && sudo apt-get dist-upgrade && sudo apt full-upgrade
 
 sudo apt-add-repository ppa:x2go/stable
 sudo apt-get update

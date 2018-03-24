@@ -2,17 +2,17 @@
 
 ### Introduction
 
-In this guide, you will learn how to install and configure a remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 16.04 Droplet.
+In this guide, you will learn how to install and configure a remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 16.04 Droplet.
 
 Your droplet will have many same utilities and functionality as having an [Ubuntu Mate Desktop](https://ubuntu-mate.org/what-is-ubuntu-mate/) installation on a physical computer, except it will live on a DigitalOcean droplet, making it accessible from anywhere with internet access.
 
-The typical solution to interacting with a GUI( graphical user interface) on a remote Linux desktop is Virtual Network Computing (VNC). VNC connections can be sluggish or unresponsive and often have default settings that are not secure if used outside of local networks. In situations where you need to remotely connect to and access a Linux desktop securely and with minimal latency, X2Go is an excellent solution.
-X2Go works with your existing SSH daemon to encrypt all traffic between the client and the server, relying on well-tested and secure mechanism of authentication. It either avoids or optimizes the most latency-intensive portions of X-forwarding safely and without complex manual configuration. The end result is a highly-responsive and near-native desktop experience accessible from anywhere with internet connectivity.
+A typical solution to having GUI access to aremote Linux desktop is to use Virtual Network Computing (VNC).
+Yet, VNC connections often seem sluggish or unresponsive, and VNC software often carries default settings that are insecure if used outside of your local network or LAN.
+For situations where you need to remotely connect to and access a Linux desktop securely and with minimal latency, X2Go is an excellent solution.
+X2Go works with your existing SSH daemon to encrypt all traffic between the client and the server, relying on well-tested and secure mechanism of authentication.
+It either avoids or optimizes the most latency-intensive portions of X-forwarding safely and without complex manual configuration. The end result is a highly-responsive and near-native desktop experience accessible from anywhere with internet connectivity.
 
-Such a setup is useful when:
-
-- You need this desktop environment but can't install a Linux-based operating system locally.
-- You need some combination of graphical desktop, high-speed Internet, reliable power source, and ability to scale resources up and down quickly.
+Such a setup is useful when you need a remotely-accessible grapical desktop and some combination of: high-speed Internet, reliable power source, and ability to scale resources up and down quickly.
 
 You can connect from a computer running Linux, Windows or Mac OS X by using the free and open-source X2Go Client.
 
@@ -20,8 +20,9 @@ You can connect from a computer running Linux, Windows or Mac OS X by using the 
 
 Before you begin this guide you'll need the following:
 
-- An Ubuntu 16.04 instance with at least 4GB of RAM. (4GB is great to start with, 8GB+ RAM is optimal).
-  Choose a server location that is as close as possible to the location where you intend to connect from to reduce latency.
+- An Ubuntu 16.04 instance with at least 4GB of RAM. (2GB minimum, 4GB is great, 8GB+ RAM is optimal,).
+Choose a server location that is as close as possible to the location where you intend to connect from to reduce latency.
+
 - One Ubuntu 16.04 server with a sudo non-root user, SSH key, and firewall enabled, which you can set up by following [this Initial Server Setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04).
 
 Recall that if you run out of RAM, applications will be terminated by the Linux kernel, and you might lose your work. If you notice that the programs you use require a lot of RAM, you can power off your droplet and resize as needed.
@@ -59,7 +60,6 @@ apt-cache search x2go
 You are now able to access the X2Go packages.
 
 **Now transition to the next step by telling the reader what's next.**
-
 
 ## Step 2 — Firewalling the Server
 
@@ -131,28 +131,16 @@ In this tutorial, you'll install the lightweight [MATE Desktop Environment](http
 **Add Required Repositories for Desktop Environment**
 
 ```command
-sudo apt-add-repository ppa:ubuntu-mate-dev/ppa
-```
-
-```command
-sudo apt-add-repository ppa:ubuntu-mate-dev/xenial-mate
-sudo apt update
-sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
-sudo apt full-upgrade
 ```
 
 **Minimal Desktop Environment**: If you want to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `ubuntu-mate-core` *metapackage*.
 
 A metapackage doesn't contain software of its own, it just depends on other packages to be installed, allowing for an entire collection of packages to be installed at once without having to type each package name individually at the command line.
 
-Install `ubuntu-mate-desktop` and all of the additional dependencies needed to support it:
-
 ```command
 sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
 ```
-
-This install and configure a complete desktop environment similar to what you'd get if installing Ubuntu Mate from a bootable DVD on your local PC.
 
 Now that our graphical environment is installed and configured, we need to set up a way to view it from another computer.
 
@@ -160,38 +148,22 @@ Now that our graphical environment is installed and configured, we need to set u
 
 X2Go comes with two main components: the server, which starts and manages the graphical session on the remote machine, and the client, which we install on our local computer to view and control the remote desktop or application.
 
-Since Debian does not include the X2Go server in its default repositories, we have to add an extra repository to the package manager's configuration.
-
-First, import the X2Go's developers' public key as a security measure to ensure that we can only download and install packages properly signed with their private keys.
-
-ges.x2go.org/debian jessie main` to it, telling the package manager where to find the supplementary packages.
-
-To refresh the database of available software packages, enter the following command:
+Since Ubuntu does not include the latest version of X2Go server in its default repositories, we have to add an extra repository to the package manager's configuration.
 
 ```command
-apt-get install python-software-properties
 add-apt-repository ppa:x2go/stable
-```
-
-```command
-sudo apt-get update
 ```
 
 Finally, install X2Go on the server:
 
 ```command
+sudo apt-get update
 sudo apt-get install x2goserver x2goserver-xsession x2gomatebindings
 ```
 
-At this point, no further setup is required on your server. However, keep in mind that since SSH password authentication is disabled for increased security, you'll need to have your SSH private key available on any machine that you want to log in from.
+At this point, no further setup is necessary on your server. However, keep in mind that since SSH password authentication is disabled for increased security, you'll need to have your SSH private key available on any machine that you want to log in from.
 
 We are now done setting up the server and can type `exit` or close the terminal window. The rest of the steps will focus on the client for your local machine.
-
-```command
-apt-get update
-
-sudo apt-get install x2goserver x2goserver-xsession 
-```
 
 ## Step 4 — Installing the X2Go Client Locally
 
@@ -235,9 +207,11 @@ After pressing the **OK** button, you can start your graphical session by clicki
 
 ![X2Go Main Window - Session List](http://assets.digitalocean.com/articles/how-to-setup-a-remote-desktop-with-x2go-on-debian-8/main-window.png)
 
-In a few seconds, your remote desktop will be displayed, and you can start interacting with it. At first login, XFCE will ask if you want to **Use default config** or **One empty panel**. The first option will create a rectangular panel docked at the bottom of the screen, containing a few useful application shortcuts (e.g. a file manager, a terminal emulator, a browser, etc.). This option will also add a top panel to the desktop that includes utilities like an application launcher, a clock, a shutdown menu, and more.
+### TODO - RE-WORK FOR MATE:
 
-Unless you're already familiar with XFCE, opting for an empty panel can be more complicated since you'll be starting from scratch. There will be no taskbar, no clock, no pre-configured start menu; it will be up to you to add everything to an empty panel on your own.
+> In a few seconds, your remote desktop will be displayed, and you can start interacting with it. At first login, XFCE will ask if you want to **Use default config** or **One empty panel**. The first option will create a rectangular panel docked at the bottom of the screen, containing a few useful application shortcuts (e.g. a file manager, a terminal emulator, a browser, etc.). This option will also add a top panel to the desktop that includes utilities like an application launcher, a clock, a shutdown menu, and more.
+> 
+> Unless you're already familiar with XFCE, opting for an empty panel can be more complicated since you'll be starting from scratch. There will be no taskbar, no clock, no pre-configured start menu; it will be up to you to add everything to an empty panel on your own.
 
 Additionally, on Windows and Linux-based operating systems, there are a few useful keyboard shortcuts you can use for a better experience:
 
