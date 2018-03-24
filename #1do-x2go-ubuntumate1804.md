@@ -165,9 +165,15 @@ At this point, no further setup is necessary on your server. However, keep in mi
 
 We are now done setting up the server and can type `exit` or close the terminal window. The rest of the steps will focus on the client for your local machine.
 
-## Step 4 — Installing the X2Go Client Locally
+## Step 4 — [Installing the X2Go Client Locally](https://wiki.x2go.org/doku.php/doc:installation:x2goclient)
 
 If you're using Windows on your local machine, you can download the client software from <http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe>.
+
+#### Installing the Qt-based X2Go Client
+
+##### MS Windows
+
+[Download X2Go for MS Windows™](http://code.x2go.org/releases/binary-win32/x2goclient/releases/4.1.1.1-2018.03.01/) and install.
 
 After you select your preferred language and agree to the license, a wizard will guide you through each step of the installation process. Normally, there shouldn't be any reason to change any of the default values pre-filled or pre-selected in these steps.
 
@@ -178,7 +184,6 @@ Double-click the .dmg file to open a folder containing the copyright, license, a
 And, if you're using Debian or Ubuntu you can install the X2Go client with:
 
 ```command
-sudo add-apt-repository ppa:x2go/stable
 sudo apt-get install x2goclient
 ```
 
