@@ -183,7 +183,8 @@ If you're running macOS locally, you can find the client software at <http://cod
 
 Double-click the .dmg file to open a folder containing the copyright, license, and X2Go client executable, then double-click the executable to start the client.
 
-And, if you're using Debian or Ubuntu you can install the X2Go client with:
+##### Ubuntu / Debian (and derivatives)
+You can install the X2Go client with:
 
 ```command
 sudo apt-get install x2goclient
