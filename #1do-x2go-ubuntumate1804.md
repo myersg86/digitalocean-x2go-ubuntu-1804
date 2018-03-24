@@ -240,13 +240,7 @@ After pressing the **OK** button, you can start your graphical session by clicki
 
 ![X2Go Main Window - Session List](http://assets.digitalocean.com/articles/how-to-setup-a-remote-desktop-with-x2go-on-debian-8/main-window.png)
 
-### TODO - RE-WORK FOR MATE:
-
-> In a few seconds, your remote desktop will be displayed, and you can start interacting with it. At first login, XFCE will ask if you want to **Use default config** or **One empty panel**. The first option will create a rectangular panel docked at the bottom of the screen, containing a few useful application shortcuts (e.g. a file manager, a terminal emulator, a browser, etc.). This option will also add a top panel to the desktop that includes utilities like an application launcher, a clock, a shutdown menu, and more.
->
-> Unless you're already familiar with XFCE, opting for an empty panel can be more complicated since you'll be starting from scratch. There will be no taskbar, no clock, no pre-configured start menu; it will be up to you to add everything to an empty panel on your own.
-
-Additionally, on Windows and Linux-based operating systems, there are a few useful keyboard shortcuts you can use for a better experience:
+On Windows and Linux-based operating systems, there are a few useful keyboard shortcuts you can use for a better experience:
 
 `CTRL+ALT+F` will toggle full-screen mode on and off. Working in full-screen mode can feel more like a local desktop experience. Plus, other keyboard shortcuts will be grabbed by the remote OS instead of the local one.
 
@@ -256,11 +250,7 @@ Additionally, on Windows and Linux-based operating systems, there are a few usef
 
 Lastly, there are two ways you can end the remote session, closing all of the graphical programs running in it. You can log off remotely from MATE's **start menu**, or you can click the button marked with a circle and a small line (like a power/standby icon) in the bottom right corner of the main portion of the screen.
 
-The first method is cleaner but may leave programs like session managing software running. The second method will close everything but may do so forcefully if a process can't cleanly exit. In either case, be sure to save your work before proceeding.
-
 ![X2Go Main Window - Terminate Session Button](http://assets.digitalocean.com/articles/how-to-setup-a-remote-desktop-with-x2go-on-debian-8/terminate-session.png)
-
-On a final note, although it's not required, let's go into MATE's control panel, navigate to power settings and disable all standby features. If you don't use the desktop for a while, MATE will try to trigger a standby. Although the server normally won't do anything when it receives this request, it's better to avoid any unforeseen behaviors altogether.
 
 ## Conclusion
 
