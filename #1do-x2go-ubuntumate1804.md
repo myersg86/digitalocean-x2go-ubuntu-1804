@@ -183,7 +183,7 @@ sudo apt-get install x2goclient
 
 If you'd like additional information about the clients or you'd like to build from the source, you can visit [X2Go's official documentation](http://wiki.x2go.org/doku.php/download:start).
 
-Now that the desktop client is installed, we can configure its settings and connect to the X2Go server to use our remote XFCE desktop.
+Now that the desktop client is installed, we can configure its settings and connect to the X2Go server to use our remote MATE desktop.
 
 ## Step 5 — Connecting to the Remote Desktop
 
@@ -197,7 +197,7 @@ Enter your server's IP address or hostname in the **Host** field under **Server*
 
 Enter the username you used for your SSH connection in the **Login** field.
 
-And, since it's what we installed in Step Two, choose `XFCE` as your **Session type**.
+And, since it's what we installed in Step Two, choose `MATE` as your **Session type**.
 
 Finally, because we log into the server with SSH keys, click the folder icon next to **Use RSA/DSA key for ssh connection** and browse to your private key.
 
@@ -221,13 +221,13 @@ Additionally, on Windows and Linux-based operating systems, there are a few usef
 
 `CTRL+ALT+T` will disconnect from the session but leave the GUI running on the server. It's just a quick way of disconnecting without logging off or closing applications on the server. The same will happen if you click the window's close button.
 
-Lastly, there are two ways you can end the remote session, closing all of the graphical programs running in it. You can log off remotely from XFCE's **start menu**, or you can click the button marked with a circle and a small line (like a power/standby icon) in the bottom right corner of the main portion of the screen.
+Lastly, there are two ways you can end the remote session, closing all of the graphical programs running in it. You can log off remotely from MATE's **start menu**, or you can click the button marked with a circle and a small line (like a power/standby icon) in the bottom right corner of the main portion of the screen.
 
 The first method is cleaner but may leave programs like session managing software running. The second method will close everything but may do so forcefully if a process can't cleanly exit. In either case, be sure to save your work before proceeding.
 
 ![X2Go Main Window - Terminate Session Button](http://assets.digitalocean.com/articles/how-to-setup-a-remote-desktop-with-x2go-on-debian-8/terminate-session.png)
 
-On a final note, although it's not required, let's go into XFCE's control panel, navigate to power settings and disable all standby features. If you don't use the desktop for a while, XFCE will try to trigger a standby. Although the server normally won't do anything when it receives this request, it's better to avoid any unforeseen behaviors altogether.
+On a final note, although it's not required, let's go into MATE's control panel, navigate to power settings and disable all standby features. If you don't use the desktop for a while, MATE will try to trigger a standby. Although the server normally won't do anything when it receives this request, it's better to avoid any unforeseen behaviors altogether.
 
 ## Conclusion
 
