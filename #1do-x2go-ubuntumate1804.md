@@ -191,6 +191,30 @@ sudo apt-get install x2goclient
 
 If you'd like additional information about the clients or you'd like to build from the source, you can visit [X2Go's official documentation](http://wiki.x2go.org/doku.php/download:start).
 
+## Fedora
+
+X2Go Client is part of Fedora 19 and later. Install it using the software installer or the following command:
+
+```
+yum install x2goclient
+```
+
+## Redhat
+
+You need to add our or the official EPEL repository:
+
+* [X2Go Packages for Redhat Enterprise Linux and Derivatives](https://wiki.x2go.org/doku.php/wiki:repositories:epel)
+
+## FreeBSD
+
+X2Go Client is available via FreshPorts:
+
+* <http://www.freshports.org/net/x2goclient/>
+
+## GNU/Linux with installation from source tarball
+
+The sources of this X2Go component are available as [source tarballs](http://code.x2go.org/releases/source/x2goclient).
+
 Now that the desktop client is installed, we can configure its settings and connect to the X2Go server to use our remote MATE desktop.
 
 ## Step 5 — Connecting to the Remote Desktop
