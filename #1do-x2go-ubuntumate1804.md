@@ -177,6 +177,8 @@ If you're using Windows on your local machine, you can download the client softw
 
 After you select your preferred language and agree to the license, a wizard will guide you through each step of the installation process. Normally, there shouldn't be any reason to change any of the default values pre-filled or pre-selected in these steps.
 
+##### [OSX](https://wiki.x2go.org/doku.php/doc:installation:x2goclient#os_x)
+
 If you're running macOS locally, you can find the client software at <http://code.x2go.org/releases/X2GoClient_latest_macosx_10_9.dmg>.
 
 Double-click the .dmg file to open a folder containing the copyright, license, and X2Go client executable, then double-click the executable to start the client.
