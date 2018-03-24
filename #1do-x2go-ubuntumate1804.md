@@ -146,7 +146,7 @@ Now that our graphical environment is installed and configured, we need to set u
 
 ## Step 3 — Installing X2Go on the Server
 
-X2Go comes with two main components: the server, which starts and manages the graphical session on the remote machine, and the client, which we install on our local computer to view and control the remote desktop or application.
+X2Go has two main components: the server starts and manages the graphical session on the remote machine, and the client, which we install on our local computer to view and control the remote desktop.
 
 Since Ubuntu does not include the latest version of X2Go server in its default repositories, we have to add an extra repository to the package manager's configuration.
 
