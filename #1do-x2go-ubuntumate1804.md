@@ -189,7 +189,7 @@ And, if you're using Debian or Ubuntu you can install the X2Go client with:
 sudo apt-get install x2goclient
 ```
 
-If you'd like additional information about the clients or you'd like to build from the source, you can visit [X2Go's official documentation](http://wiki.x2go.org/doku.php/download:start).
+
 
 ##### Fedora
 
@@ -216,6 +216,8 @@ X2Go Client is available via FreshPorts:
 The sources of this X2Go component are available as [source tarballs](http://code.x2go.org/releases/source/x2goclient).
 
 Now that the desktop client is installed, we can configure its settings and connect to the X2Go server to use our remote MATE desktop.
+
+If you'd like additional information about the clients or you'd like to build from the source, you can visit [X2Go's official documentation](http://wiki.x2go.org/doku.php/download:start).
 
 ## Step 5 — Connecting to the Remote Desktop
 
