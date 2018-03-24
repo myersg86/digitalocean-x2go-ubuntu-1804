@@ -126,7 +126,7 @@ With our firewall in place, there's only one point of entry to our server, and w
 
 ## Step 3 — Installing the Desktop Environment
 
-In this tutorial, you'll install the lightweight [MATE Desktop Environment](http://mate-desktop.org/). There are two ways to achieve this, but you only need to **choose one**—either the Minimal Desktop Environment *or* the Full Desktop Environment.
+In this tutorial, you'll install the lightweight [MATE Desktop Environment](http://mate-desktop.org/). to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `ubuntu-mate-core` *metapackage*.
 
 **Add Required Repositories for Desktop Environment**
 
@@ -134,7 +134,7 @@ In this tutorial, you'll install the lightweight [MATE Desktop Environment](http
 sudo apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop
 ```
 
-**Minimal Desktop Environment**: If you want to install a small, core set of packages and then build on top of them by manually adding whatever you need afterward, you can use the `ubuntu-mate-core` *metapackage*.
+**Minimal Desktop Environment**: If you want
 
 A metapackage doesn't contain software of its own, it just lists other packages (or "dependencies") to be installed, allowing for an entire collection of packages to be installed at once without having to type each package name individually at the command line.
 
