@@ -165,7 +165,7 @@ At this point, no further setup is necessary on your server. However, keep in mi
 
 We are now done setting up the server and can type `exit` or close the terminal window. The rest of the steps will focus on the client for your local machine.
 
-## Step 4 — Installing the X2Go Client Locally
+## Step 4 — [Installing the X2Go Client Locally](https://wiki.x2go.org/doku.php/doc:installation:x2goclient)
 
 If you're using Windows on your local machine, you can download the client software from <http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe>.
 
