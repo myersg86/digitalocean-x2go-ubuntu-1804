@@ -4,7 +4,7 @@
 
 In this guide, you will learn how to install and configure a remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 16.04 Droplet.
 
-Your droplet will have many same utilities and functionality as having an [Ubuntu Mate Desktop](https://ubuntu-mate.org/what-is-ubuntu-mate/) installation on a physical computer, except it will live on a DigitalOcean droplet, making it accessible from anywhere with internet access.
+Your droplet will have the same functionality as an [Ubuntu Mate Desktop](https://ubuntu-mate.org/what-is-ubuntu-mate/) installation on a physical computer, except it will live on a DigitalOcean droplet, making it accessible from anywhere with internet access.
 
 A typical solution to having GUI access to aremote Linux desktop is to use Virtual Network Computing (VNC).
 Yet, VNC connections often seem sluggish or unresponsive, and VNC software often carries default settings that are insecure if used outside of your local network or LAN.
@@ -210,7 +210,7 @@ After pressing the **OK** button, you can start your graphical session by clicki
 ### TODO - RE-WORK FOR MATE:
 
 > In a few seconds, your remote desktop will be displayed, and you can start interacting with it. At first login, XFCE will ask if you want to **Use default config** or **One empty panel**. The first option will create a rectangular panel docked at the bottom of the screen, containing a few useful application shortcuts (e.g. a file manager, a terminal emulator, a browser, etc.). This option will also add a top panel to the desktop that includes utilities like an application launcher, a clock, a shutdown menu, and more.
-> 
+>
 > Unless you're already familiar with XFCE, opting for an empty panel can be more complicated since you'll be starting from scratch. There will be no taskbar, no clock, no pre-configured start menu; it will be up to you to add everything to an empty panel on your own.
 
 Additionally, on Windows and Linux-based operating systems, there are a few useful keyboard shortcuts you can use for a better experience:
