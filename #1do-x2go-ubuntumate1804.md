@@ -189,8 +189,6 @@ And, if you're using Debian or Ubuntu you can install the X2Go client with:
 sudo apt-get install x2goclient
 ```
 
-
-
 ##### Fedora
 
 X2Go Client is part of Fedora 19 and later. Install it using the software installer or the following command:
