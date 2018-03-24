@@ -224,7 +224,7 @@ When you first open the X2Go client, the following window should appear. If it d
 
 ![X2Go Client Screenshot - Creating a New Session](http://assets.digitalocean.com/articles/how-to-setup-a-remote-desktop-with-x2go-on-debian-8/create-new-session.png)
 
-In the **Session name** field, enter something to help differentiate between servers. This can be particularly useful if you plan on connecting to multiple machines, since all of the names will be listed in the program's main window once you save your settings.
+In the **Session name** field, enter a name that helps you identify this server. Having a unique name is particularly important if you plan on connecting to more than one machine.
 
 Enter your server's IP address or hostname in the **Host** field under **Server**.
 
@@ -240,9 +240,9 @@ After pressing the **OK** button, you can start your graphical session by clicki
 
 ![X2Go Main Window - Session List](http://assets.digitalocean.com/articles/how-to-setup-a-remote-desktop-with-x2go-on-debian-8/main-window.png)
 
-On Windows and Linux-based operating systems, there are a few useful keyboard shortcuts you can use for a better experience:
+If you are using Windows or Linux as your operating system locally, there are a few helpful keyboard shortcuts to keep in mind for the best possible experience:
 
-`CTRL+ALT+F` will toggle full-screen mode on and off. Working in full-screen mode can feel more like a local desktop experience. Plus, other keyboard shortcuts will be grabbed by the remote OS instead of the local one.
+`CTRL+ALT+F` will toggle full-screen mode on and off. Working in full-screen mode can feel more like a local desktop experience.
 
 `CTRL+ALT+M` will minimize the remote view, even if you are in full-screen mode
 
