@@ -1,8 +1,8 @@
 #!/bin/bash
 set -ex
 
-adduser greg
-usermod -aG sudo greg
+adduser sammy
+usermod -aG sudo sammy
 # vi /etc/ssh/sshd_config
 apt update
 apt upgrade -y
