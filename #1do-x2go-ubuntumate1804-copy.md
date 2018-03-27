@@ -1,5 +1,5 @@
 # How To Set Up and Configure a Remote Desktop with X2Go on Ubuntu 16.04
- 
+
 ### Introduction
 
 In this guide, you will learn how to install and configure a remotely accessible Linux desktop environment on a Digital Ocean Ubuntu 16.04 Droplet.
